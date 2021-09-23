@@ -66,8 +66,6 @@ func rule(_ yours: [Int], _ my: [Int]){
         print("\(strike) 스트라이크")
     } else if strike == 0 && ball > 0{
         print("\(ball) 볼")
-    } else{
-        print("\(strike) 스트라이크, \(ball) 볼")
     }
 }
 
