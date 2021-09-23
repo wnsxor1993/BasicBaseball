@@ -41,7 +41,7 @@ func playing(){
         rule(aiNums, read)
         
         if aiNums == read{
-            print("3 스트라이크\n3개의 숫자를 모두 맞히셨습니다! 게임 종료")
+            print("3개의 숫자를 모두 맞히셨습니다! 게임 종료")
         }
         
         myNums = read
@@ -66,6 +66,8 @@ func rule(_ yours: [Int], _ my: [Int]){
         print("\(strike) 스트라이크")
     } else if strike == 0 && ball > 0{
         print("\(ball) 볼")
+    } else{
+        print("\(strike) 스트라이크, \(ball) 볼")
     }
 }
 
